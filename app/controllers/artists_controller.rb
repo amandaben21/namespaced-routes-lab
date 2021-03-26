@@ -13,7 +13,7 @@ class ArtistsController < ApplicationController
     if @preference.allow_create_artists
       @artist = Artist.new
     else
-      redirect_to artists_path, alert: "Creating artists is not allowed."
+      redirect_to artists_path
     end
   end
 
